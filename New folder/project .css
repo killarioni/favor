@@ -1,0 +1,413 @@
+* {
+    
+    box-sizing: border-box;
+
+}
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+.hero-container {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+    overflow: hidden;
+  }
+  
+  .hero-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-top: -13%;
+    opacity: 0.8;
+  }
+  
+  .hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+  
+  .hero-heading {
+    font-size: 50px;
+    margin-bottom: 10px;
+  }
+  
+  .hero-subheading {
+    font-size: 24px; 
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: #fff;
+  }
+  .hero-button {
+    font-size: 18px; 
+    padding: 10px 20px;
+    background-color: #ff6347;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .hero-button:hover {
+    background-color: #e6513b;
+  }
+  header {
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    transition: top 0.3s, background-color 0.3s ease-in-out;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+  }
+  .header a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+  }
+  .content {
+    padding: 50px;
+    margin-top: 30px;
+    text-align: center;
+  }
+  .header.scrolled {
+    background-color: #EAE9E9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+.header.scrolled a {
+  color: #000;
+}
+  .logo {
+    font-size: 2rem;
+    color: #fff;
+    margin-left: 50px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    
+}
+
+.nav-links li {
+  padding: 0 20px;
+  
+}
+
+.nav-links a {
+  color: #fff;
+  font-size: 1.2rem;
+  
+}
+.header .bi-person {
+  color: #fff;
+}
+
+.header.scrolled .bi-person {
+  color: #000;
+}
+.bi-person {
+  margin-right: 50px;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  right: 0;
+  top: 100%;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+footer {
+  background-color:#EAE9E9;
+  padding: 1rem;
+  min-height: 340px;
+  
+
+}
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-left: 85px;
+}
+.footer-section {
+  flex-basis: calc(33.333% - 2rem);
+  margin-bottom: 2rem;
+}
+.footer-section h3 {
+  margin-bottom: 1rem;
+  font-size: 2.3rem
+}
+.footer-section h2 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  
+}
+.footer-section h2 a {
+  text-decoration: none;
+  color: #000;
+}
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+.footer-section ul li {
+  margin-bottom: 0.5rem;
+  font-size: 20px;
+}
+.footer-section ul li a {
+  color: #424244;
+  text-decoration: none;
+}
+.follow-us {
+  display: flex;
+  margin-top: 2rem;
+}
+.icon-link {
+  color: #424244;
+  font-size: 2rem;
+  margin-right: 1rem;
+  transition: transform 0.2s ease-in-out;
+}
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+form input[type="email"] {
+  border: none;
+  background-color: #fff;
+  color: #444;
+  padding: 0.5rem 1rem;
+  margin-right: 180px;
+  flex-grow: 0.5;
+  box-shadow: 0 0 0 1px #000;  
+  border-radius: 4px;
+  height: 50px;
+
+}
+.email-container {
+  position: relative;
+}
+
+.email-icon {
+  position: absolute;
+  right: 12rem;
+  top: 50%;
+  transform: translateY(-50%);;
+  font-size: 1.2rem;
+}
+
+input[type="email"] {
+  padding-right: 2.5rem; 
+  
+}
+.email-icon i {
+  -ms-transform: rotate(-40deg);
+  transform: rotate(-40deg);
+}
+
+
+.form {
+  position: relative;
+  margin-bottom: 60px;
+  background-color: #E0E0E0;
+  height: 567px;
+}
+
+
+.H{
+ position: absolute;
+ top: 60px;
+ left: 170px;
+ font-style: normal;
+}
+
+.card1{
+  position: absolute;
+  border-radius: 20px;
+  border: #FFFFFF;
+  width: 550px;
+  height: 100px;
+  top: 137px;
+  left: 170px;
+  font-size: 28px;
+} 
+
+.card2{
+  position: absolute;
+  top: 137px;
+  right: 170px;
+  border-radius: 20px;
+  border: #FFFFFF;
+  width: 550px;
+  height: 100px;
+  font-size: 28px;
+}
+
+.card3{
+  position: absolute;
+  border-radius: 20px;
+  border: #FFFFFF;
+  width: 550px;
+  height: 100px;
+  top: 277px;
+  left: 170px;
+  font-size: 28px;
+}
+
+
+.card4{
+  position: absolute;
+  top: 277px;
+  right: 170px;
+  border-radius: 20px;
+  width: 550px;
+  border: #FFFFFF;
+  height: 100px;
+  font-size: 28px;
+}
+
+.button1{
+  position: absolute;
+  width: 1180px;
+  height: 100px;
+  top: 417px;
+  left: 170px;
+  border-radius: 20px;
+  background-color: #FF6700;
+  border: #FF6700;
+  color: #FFFFFF;
+  font-size: 28px;
+}
+
+.Blogs{
+  position: relative;
+  height: 900px;
+  width: 600px;
+  margin-bottom: 60px; 
+}
+
+.h1{
+  position: absolute;
+  top: 0px;
+  left: 170px;
+  font-style: normal;
+}
+
+.img1 {
+  position: absolute;
+  top: 87px;
+  left: 170px;
+  font-size: 20px;
+  font-style: normal;
+}
+
+.img1 img{
+  width: 400px;
+}
+
+.img2  {
+  position: absolute;
+  top: 87px;
+  left: 600px;
+  font-size: 20px;
+  font-style: normal;
+}
+
+.img2 img{
+  width: 400px;
+}
+
+.img3  {
+  position: absolute;
+  top: 87px;
+  left: 1020px;
+  font-size: 20px;
+  font-style: normal;
+}
+
+.img3 img{
+  width: 400px;
+}
+
+.img4 {
+  position: absolute;
+  top: 516px;
+  left: 170px;
+  font-size: 20px;
+  font-style: normal;
+}
+
+.img4 img{
+  width: 400px;
+}
+
+.img5 {
+  position: absolute;
+  top: 516px;
+  left: 1020px;
+  font-size: 20px;
+  font-style: normal;
+}
+
+.img5 img{
+  width: 400px;
+}
+
+.img6 {
+  position: absolute;
+  top: 516px;
+  left: 600px;
+  font-size: 20px;
+  font-style: normal;
+}
+
+.img6 img{
+  width: 400px;
+}
